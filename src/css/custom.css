@@ -1,0 +1,18 @@
+.square:before {
+    content: "";
+    float: left;
+    padding-top: 100%; /* initial ratio of 1:1*/
+}
+
+.rounded-top-left-1 {
+    border-top-left-radius: 50%;
+}
+.rounded-top-right-1 {
+    border-top-right-radius: 50%;
+}
+.rounded-bottom-left-1 {
+    border-bottom-left-radius: 50%;
+}
+.rounded-bottom-right-1 {
+    border-bottom-right-radius: 50%;
+}
