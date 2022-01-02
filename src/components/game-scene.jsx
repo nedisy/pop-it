@@ -63,6 +63,13 @@ class GameScene extends Component {
         return "w-100 h-90 top-50 start-50 translate-middle";
     }
 
+    getBtnColor(row, col) {
+        if (this.state.boardState[row][col]) {
+            return "dark-";
+        }
+        return "darker-";
+    }
+
     pop(row, col) {
         const popSound = new Audio(pop1);
         popSound.play();
@@ -168,7 +175,11 @@ class GameScene extends Component {
                                         ></div>
                                         <button
                                             className={
-                                                "btn btn-dark-" +
+                                                "btn btn-" +
+                                                this.getBtnColor(
+                                                    rowIndex,
+                                                    colIndex
+                                                ) +
                                                 this.getBoardColor(rowIndex) +
                                                 " p-0 w-75 h-75 rounded-circle position-absolute top-50 start-50 translate-middle"
                                             }
