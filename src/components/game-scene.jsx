@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import pop1 from "./sounds/pop1.mp3";
 
 class GameScene extends Component {

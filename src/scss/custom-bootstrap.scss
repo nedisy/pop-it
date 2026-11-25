@@ -1,6 +1,7 @@
 /* import the necessary Bootstrap files */
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/maps";
 
 //add custom colors map
 
@@ -46,7 +47,7 @@ $utilities-text-colors: map-loop(
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 //import utilities
-@import "../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/utilities";
 
 //add width
 $utilities: map-merge(
@@ -91,4 +92,4 @@ $utilities: map-merge(
 );
 
 /* finally, import Bootstrap */
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

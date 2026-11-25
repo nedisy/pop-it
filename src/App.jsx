@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import "./App.css";
 import EnterPlayerNameScene from "./components/enter-player-name-scene";
 import GameScene from "./components/game-scene";
